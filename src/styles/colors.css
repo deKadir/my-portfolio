@@ -1,0 +1,14 @@
+.light {
+  --color-primary: #ffa97a;
+  --color-secondary: #fff;
+  --color-dark: gray;
+  --color-white: #182228;
+  --color-gray: #182228;
+}
+.dark {
+  --color-primary: #ffa97a;
+  --color-secondary: #182228;
+  --color-dark: #111a20;
+  --color-white: #fff;
+  --color-gray: #959595;
+}

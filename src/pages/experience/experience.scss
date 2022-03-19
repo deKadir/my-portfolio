@@ -1,0 +1,42 @@
+@import "styles/media.scss";
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.skill-card {
+  margin: 1rem;
+}
+.skill {
+  margin-top: 1.5rem;
+  &-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-bar,
+  .fill {
+    height: 8px;
+    border-radius: 5px;
+  }
+  &-bar {
+    width: 100%;
+    position: relative;
+    margin-top: 0.2rem;
+    background: rgba(255, 169, 122, 0.5);
+    box-shadow: 0px 0px 5px rgba(255, 169, 122, 0.5);
+  }
+  .fill {
+    position: absolute;
+    left: 0;
+    box-shadow: 0px 0px 5px rgba(255, 169, 122, 1);
+    background: rgba(255, 169, 122, 1);
+    z-index: 10;
+  }
+}
+
+@media (max-width: $small-screen) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

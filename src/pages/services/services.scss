@@ -1,0 +1,26 @@
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.service-card {
+  margin: 1rem;
+}
+.card {
+  &-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+  }
+  &-title {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  &-button {
+    position: absolute;
+    align-self: flex-end;
+    right: 0;
+    bottom: 0;
+  }
+}

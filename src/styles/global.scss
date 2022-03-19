@@ -1,0 +1,118 @@
+@import "./reset.scss";
+@import "./variables.scss";
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-dark);
+}
+
+.icon-primary {
+  fill: var(--color-primary);
+}
+.icon-white {
+  fill: var(--color-white);
+}
+.icon-24 {
+  display: flex;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.icon-32 {
+  display: flex;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+.container {
+  width: min($container-width, 100%);
+  margin: 0 auto;
+}
+//buttons
+.btn {
+  display: block;
+  width: max-content;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  font: {
+    family: "Jost", sans-serif;
+    weight: 600;
+    size: 1.25rem;
+  }
+  transition: $animation-duration;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.btn-small {
+  font-size: 1rem;
+}
+.btn-outline {
+  background-color: var(--color-secondary) !important;
+  border: 1px solid var(--color-primary) !important;
+  color: var(--color-white);
+}
+.btn-secondary {
+  color: var(--color-secondary) !important;
+  background-color: var(--color-primary) !important;
+}
+//colors
+
+.txt-primary {
+  color: var(--color-primary);
+}
+.txt-secondary {
+  color: var(--color-secondary);
+}
+.txt-white {
+  color: var(--color-white);
+}
+.txt-gray {
+  color: var(--color-gray);
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-dark {
+  background-color: var(--color-dark);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+//font
+.inter-500 {
+  font: {
+    family: "Inter", sans-serif;
+    weight: 500;
+  }
+}
+.jost-600 {
+  font: {
+    family: "Jost", sans-serif;
+    weight: 600;
+  }
+}
+
+.inter-800 {
+  font: {
+    family: "Inter", sans-serif;
+    weight: 800;
+  }
+}
+//font size
+.fs-10 {
+  font-size: 0.625rem;
+}
+.fs-14 {
+  font-size: 0.75rem;
+}
+.fs-16 {
+  font-size: 1rem;
+}
+.fs-20 {
+  font-size: 1.25rem;
+}
