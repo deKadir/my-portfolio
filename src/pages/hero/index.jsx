@@ -1,8 +1,16 @@
 import hero_avatar from "assets/images/avatar_hello.png";
 import "./hero.scss";
+import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <div className="container hero-container">
+    <motion.div
+      animate={
+        {
+          // x: 100,
+        }
+      }
+      className="container hero-container"
+    >
       <p className="jost-600 fs-16 txt-white">Hello I'm</p>
       <h1 className="txt-white ">Abdulkadir Develioğlu</h1>
       <span className="fs-16 txt-primary jost-600 txt-primary">
@@ -15,6 +23,6 @@ export default function Hero() {
         </a>
       </div>
       <img src={hero_avatar} alt="avatar" />
-    </div>
+    </motion.div>
   );
 }

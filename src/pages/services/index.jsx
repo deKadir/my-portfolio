@@ -17,7 +17,7 @@ export default function Services() {
                   <VerifyIcon />{" "}
                   <h1 className="jost-600 fs-16 txt-white">{item.title}</h1>
                 </div>
-                <p className=" inter-400 txt-gray fs-16">{item.description}</p>
+                <p className=" inter-500 txt-gray fs-16">{item.description}</p>
                 <a href="#contact" className="btn btn-outline card-button">
                   {" "}
                   Contact Me
