@@ -4,7 +4,7 @@ import "./styles/global.scss";
 import { useEffect, useState } from "react";
 import "./styles/colors.css";
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   const contextValues = {
     theme,
@@ -14,6 +14,7 @@ function App() {
     document.querySelector("html").classList.remove("light");
     document.querySelector("html").classList.remove("dark");
     document.querySelector("html").classList.add(theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
   return (
     <AppContext.Provider value={contextValues}>
