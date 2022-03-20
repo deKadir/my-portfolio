@@ -12,9 +12,8 @@ export default function About() {
         />
         <div className="about-content">
           <p className="txt-gray inter-500">
-            Web developer, with extensive knowledge and years of experience,
-            working in web technologies and ui . Ux design, delivering quality
-            work
+            Enthusiastic, open-minded <strong>MERN stack web developer</strong>{" "}
+            , with knowledge of react, html, css, sass and node js.
           </p>
           <a href="#contact" className="btn btn-secondary">
             Contact me

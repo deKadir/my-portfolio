@@ -1,7 +1,7 @@
 .light {
   --color-primary: #ffa97a;
   --color-secondary: #fff;
-  --color-dark: gray;
+  --color-dark: rgb(236, 234, 234);
   --color-white: #182228;
   --color-gray: #182228;
 }

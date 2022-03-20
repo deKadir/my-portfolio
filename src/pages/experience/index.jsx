@@ -2,6 +2,7 @@ import Card from "components/card";
 import Section from "components/section";
 import { Experiences } from "constants/ExperienceConst";
 import "./experience.scss";
+import { motion } from "framer-motion";
 export default function Experience() {
   return (
     <div>
@@ -22,10 +23,18 @@ export default function Experience() {
                         </p>
                       </div>
                       <div className="skill-bar">
-                        <div
+                        <motion.div
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: false }}
+                          transition={{ duration: 1.5, delay: 0.5 }}
+                          variants={{
+                            visible: { width: skill.percentage * 2.5 },
+                            hidden: { width: 0 },
+                          }}
                           className="fill"
                           style={{ width: `${skill.percentage}%` }}
-                        ></div>
+                        ></motion.div>
                       </div>
                     </div>
                   ))}
