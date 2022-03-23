@@ -14,7 +14,7 @@ export const Experiences = [
 
       {
         name: "React js",
-        percentage: 80,
+        percentage: 85,
       },
     ],
   },
@@ -24,7 +24,7 @@ export const Experiences = [
     skills: [
       {
         name: "Node js",
-        percentage: 70,
+        percentage: 80,
       },
       {
         name: "Mongodb",

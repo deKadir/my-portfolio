@@ -12,8 +12,12 @@ export default function About() {
         />
         <div className="about-content">
           <p className="txt-gray inter-500">
-            Enthusiastic, open-minded <strong>MERN stack web developer</strong>{" "}
-            , with knowledge of react, html, css, sass and node js.
+            A computer engineering student and{" "}
+            <strong>MERN Stack web developer</strong> with experience of Mongodb
+            , Express js , React js , Node js for almost a year. Focused on
+            learning new things and dedicated learner who tries to improve his
+            coding skills. Flexible with new technologies and looking for a
+            professional company for career opportunities.
           </p>
           <a href="#contact" className="btn btn-secondary">
             Contact me

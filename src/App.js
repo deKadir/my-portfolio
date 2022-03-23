@@ -18,9 +18,7 @@ function App() {
   }, [theme]);
   return (
     <AppContext.Provider value={contextValues}>
-      <div>
-        <Pages />
-      </div>
+      <Pages />
     </AppContext.Provider>
   );
 }
